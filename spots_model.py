@@ -22,9 +22,9 @@ class Spot:
 
     def contains(self, frac_x: float, frac_y: float) -> bool:
         diff_x = frac_x - self._center_x
-        diif_y = frac_y - self._center_y
+        diff_y = frac_y - self._center_y
 
-        return math,sqrt(diff_x * diff_x + diff_y * diff_y) <= self._radius
+        return math.sqrt(diff_x * diff_x + diff_y * diff_y) <= self._radius
 
 
 
