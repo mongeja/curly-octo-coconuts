@@ -32,7 +32,7 @@ class SpotsState:
     def __init__(self):
         self._spots = []
     
-    def all_spots() -> [Spot]:
+    def all_spots(self) -> [Spot]:
         return self._spots
 
     def handle_click(self, frac_x: float, frac_y: float) -> None:
@@ -40,7 +40,7 @@ class SpotsState:
             if spot.contains(frac_x, frac_y):
                 self.spots.remove(spot)
         
-        new_spot = Spot((frac_x, frac_y), 0.05
+        new_spot = Spot((frac_x, frac_y), 0.05)
         self._spots.append(new_spot)
 
     def move_all_spots(self) -> None:
